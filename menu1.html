@@ -24,7 +24,7 @@
 	#sec1{width: 100%; position: absolute; top:120px;background:white ;}
 	#sec6{height: 200px;}
 	
-		<!--swiper-->
+		/* <!--swiper--> */
 		html{height: 100%;}
 		
 		body{height: 100%;font-family: 'Roboto Condensed', sans-serif; background-size:100% ;background-repeat:no-repeat ; background-attachment: fixed; background-image:url("img/menu_bottomfixbanner.png") ;}
@@ -70,9 +70,9 @@
 		
 		
 	
-	<!--swiper-->
+	/* swiper */
 	
-	<!--sliderbanner-->
+	/*sliderbanner*/
 	
 	.banner-container{
 		position: relative;
@@ -106,11 +106,11 @@
 		.banner img{width: 230px;height: 230px;}
 		
 	
-	<!--sliderbanner-->
+	/* <!--sliderbanner--> */
 	
 	
 	
-	<!--3칸스와이퍼(sns)-->
+	/* <!--3칸스와이퍼(sns)--> */
 	.swiper3{height: 540px;width: 1000px;left:-10px}
 .swiper3 .swiper-slide{overflow: hidden;width: 1200px; height: 517px;}
 .swiper3 .swiper-slide a{float: left; width: 300px; height: 517px; }
@@ -139,43 +139,42 @@
 	$(function(){
 	
 	
-		///////자동슬라이더 메뉴(중간)) -->
+		// /자동슬라이더 메뉴(중간)) -->
 	
-	var dir=-1;<!-- //방향 -->
-			var speed=1;<!-- //빠르기 -->
-			var loc=1;<!-- //위치 -->
+	var dir=-1;
+			var speed=1;
+			var loc=1;
 			
 			setTimeout(banner_ani,100)
 			
 			function banner_ani(){
 				
 				loc+=speed*dir;
-				<!-- ///// -->
+				
 				if(loc<=-2300&&dir<0){
 					loc=0
 				}else if(loc>=0&& dir>0){
 					loc=-2300
 				
 				}
-				<!-- ////// -->
+			
 				
 				$('.banner-wrap').css({'left':loc})
 				setTimeout(banner_ani,10)
 			}
-			<!-- //////////////////// -->
+		
 			$('.banner').mouseenter(function(){
 				
 				speed=0
 				
 			})
-			<!-- ////////////////// -->
+			
 			$('.banner').mouseleave(function(){
 				
 				speed=1
 				
 			})
-			<!-- ////////////// -->
-			<!-- //////////////////// -->
+			
 			$('.prev').mouseenter(function(){
 				dir=1;
 				speed=2;
@@ -187,7 +186,7 @@
 				speed=1;
 				
 			})
-			<!-- ////////////////////// -->
+		
 			$('.next').mouseenter(function(){
 				dir=-1;
 				speed=2;
@@ -203,7 +202,7 @@
 	
 	
 	
-		<!--swiper-->
+		// <!--swiper-->
 			
 			
 			var swiper = new Swiper('.swiper-container', {
@@ -222,9 +221,9 @@
 				},
 			})
 	
-	<!--스와이퍼-->
+	// <!--스와이퍼-->
 	
-	<!--sns스왕이퍼---->
+	// <!--sns스왕이퍼---->
 	var swiper3 = new Swiper('.swiper3', {
       slidesPerView: 4,
       spaceBetween: 0,
@@ -238,7 +237,7 @@
         clickable: true,
       },
     })
-	<!--sns스왕이퍼---->
+	// <!--sns스왕이퍼---->
 	
 	});
 	</script>
