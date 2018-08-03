@@ -18,7 +18,7 @@
 					loc=0
 				}else if(loc>=0&& dir>0){
 					loc=-2300
-				
+			
 				}
 			
 				
