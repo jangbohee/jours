@@ -1,0 +1,119 @@
+
+	body{position: relative;}
+	.headerbg,.contentup,.contentdown{width:100%; background:white ;}
+	#sec2,#sec3,#sec4,#sec5,#sec8{background:white ;width: 1200px;margin: auto; height: 600px; border: 1px solid #000;}
+	
+	.nav_box{position: absolute; top:0px}
+	.nav_box table{padding-top: 0px;}
+	#sec7{border: 1px solid #000; height: 600px;}
+	#sec2{padding-top: 700px;}
+	#sec1{width: 100%; position: absolute; top:120px;background:white ;}
+	#sec6{height: 200px;}
+	
+		/* <!--swiper--> */
+		html{height: 100%;}
+		
+		body{height: 100%;font-family: 'Roboto Condensed', sans-serif; background-size:100% ;background-repeat:no-repeat ; background-attachment: fixed; background-image:url("img/menu_bottomfixbanner.png") ;}
+		
+		.swiper-container {
+      width: 100%;
+     
+	  border: 1px solid #000; top:60px ; position: relative;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+		swiper-pagination-bullet {
+      width: 20px;
+      height: 20px;
+      text-align: center;
+      line-height: 20px;
+      font-size: 12px;
+      color:#000;
+      opacity: 1;
+      background: rgba(0,0,0,0.2);
+    }
+	
+	.swiper-pagination-bullet-active {
+      color:#fff;
+      background: #007aff;
+    }
+		
+		
+	
+	/* swiper */
+	
+	/*sliderbanner*/
+	
+	.banner-container{
+		position: relative;
+		width: 100%;
+		height: 230px;
+		margin: auto;
+		overflow: hidden;
+		margin-top: 80px;}
+		
+		.banner-container{
+		position: relative;
+		width: 100%;
+		height: 230px;
+		margin: auto;
+		overflow: hidden;
+		margin-top: 80px;}
+		
+		
+		
+		
+		
+		.banner-wrap{width: 4600px;position: absolute;}
+		
+		
+		
+		.banner{float: left;}
+		
+		a.prev,a.next{position: absolute;display: block;z-index:999; width: 100px;height: 230px;background: rgba(0,0,0,.7);}
+		a.prev{left: 0;}
+		a.next{right: 0;}
+		.banner img{width: 230px;height: 230px;}
+		
+	
+	/* <!--sliderbanner--> */
+	
+	
+	
+	/* <!--3칸스와이퍼(sns)--> */
+	.swiper3{height: 540px;width: 1000px;left:-10px}
+.swiper3 .swiper-slide{overflow: hidden;width: 1200px; height: 517px;}
+.swiper3 .swiper-slide a{float: left; width: 300px; height: 517px; }
+
+.swiper3 .swiper-slide a.ffloat1{border-top: 4px solid red;}
+.swiper3 .swiper-slide a.ffloat2{border-top: 4px solid yellow;}
+.swiper3 .swiper-slide a.ffloat3{border-top: 4px solid green;}
+
+.swiper3 .swiper-slide a:hover{border-top: 4px solid black;}
+.swiper3 .swiper-slide a img{width: 300px; height: 525px;margin-bottom: 3px;}
+	
+	
+	
+	.swiper-slide fifa{background-size:cover ;background-position:center top ;}
+	.swiper-slide fifa:nth-child(1){background-image:url("img/banner1.jpg") ;}
+	.swiper-slide fifa:nth-child(2){background-image:url("img/banner1.jpg") ;}
+	.swiper-slide fifa:nth-child(3){background-image:url("img/banner1.jpg") ;}
+	.swiper-slide fifa:nth-child(4){background-image:url("img/banner1.jpg") ;}
+	.swiper-slide fifa:nth-child(5){background-image:url("img/banner1.jpg") ;}
+	
