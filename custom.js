@@ -93,7 +93,7 @@
 	  autoplay: {
 			delay: 2500,
 			disableOnInteraction: false,
-			}, mousewheel: true,
+			}, 
 			
       pagination: {
         el: '.swiper-pagination',
