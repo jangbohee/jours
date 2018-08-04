@@ -1,6 +1,6 @@
 
 	$(function(){
-	
+	// alert()
 	
 		// /자동슬라이더 메뉴(중간)) -->
 	
@@ -70,9 +70,9 @@
 			
 			var swiper = new Swiper('.swiper-container', {
 			effect: 'slide',
-		// 	<!--autoplay: {
-        // <!-- delay: 2500, -->
-        // <!-- disableOnInteraction: false,}, -->
+	autoplay: {
+      delay: 2500, 
+     disableOnInteraction: false,}, 
       
 				navigation: {
 					nextEl: '.swiper-button-next',
@@ -87,19 +87,117 @@
 	// <!--스와이퍼-->
 	
 	// <!--sns스왕이퍼---->
-	var swiper3 = new Swiper('.swiper3', {
-      slidesPerView: 4,
-      spaceBetween: 0,
-	  autoplay: {
-			delay: 2500,
-			disableOnInteraction: false,
-			}, 
-			
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-    })
+	//alert()
+	$('#sec8 .next').click(function(){
+		$('#sec8 .slider_wrap').animate({'margin-left':'-40%'},1000,function(){
+			$('#sec8 .slider').first().appendTo('#sec8 .slider_wrap')
+			$('#sec8 .slider_wrap').css({'margin-left':'-20%'})
+		})
+		
+	})
+	
+	$('#sec8 .prev').click(function(){
+		$('#sec8 .slider_wrap').animate({'margin-left':'0%'},1000,function(){
+			$('#sec8 .slider').last().prependTo('#sec8 .slider_wrap')
+			$('#sec8 .slider_wrap').css({'margin-left':'-20%'})
+		})
+		
+	})
+	
+	
+	
+
+
+
 	// <!--sns스왕이퍼---->
+
+
+
+
+
+	
+
+
+
+	var posBox1=$('#sec1').offset().top
+		// alert(posBox1)
+		var posBox2=$('#sec2').offset().top
+		// alert(posBox2)
+		var posBox3=$('#sec3').offset().top
+		// alert(posBox3)
+		var posBox4=$('#sec4').offset().top
+		// alert(posBox4)
+		var posBox5=$('#sec5').offset().top
+		// alert(posBox5)
+		
+		//각 세로영역의 포지션을 읽어들인다 > 세로 메뉴에 값을 넣어서 애드클래스  
+		//.eq(0~5)로 각각 li의 순서를 지정한다.
+		
+		$(window).scroll(function(){
+		
+			var scrTop=$(window).scrollTop();
+			$('.section div').removeClass('on')//활성화 되어있는 모든 애니를 초기화시킨다(애니메이트하기위해)
+			if(scrTop>=posBox1 && scrTop<posBox2){
+			
+				$('.section >div').removeClass('on')
+				$('div.blue').eq(0).find('a').addClass('on')
+				
+				
+			}
+			
+			if(scrTop>=posBox2 && scrTop<posBox3){
+			
+			
+				$('ul.gnb li').find('a').removeClass('on')
+				$('ul.gnb li').eq(1).find('a').addClass('on')
+				
+				$('#sect2 .process').addClass('on')
+				
+				$('.sect2concept').addClass('on'),200
+				
+				$('.sect2conceptbg').addClass('on'),200
+				
+				
+			}
+			
+			if(scrTop>=posBox3 && scrTop<posBox4){
+			
+				$('ul.gnb li a').removeClass('on')
+				$('ul.gnb li').eq(2).find('a').addClass('on')
+				
+		
+				
+				$('.sect3Text').addClass('on')
+				
+				sect3Ani()
+				
+			}
+			
+			if(scrTop>=posBox4 && scrTop<posBox5){
+			
+				$('ul.gnb li a').removeClass('on')
+				$('ul.gnb li').eq(3).find('a').addClass('on')
+				
+				$('#sect4 img').addClass('on')
+				
+				$('.sect4Text').addClass('on')
+			}
+			
+			if(scrTop>=posBox5 && scrTop<posBox6){
+			
+				$('ul.gnb li a').removeClass('on')
+				$('ul.gnb li').eq(4).find('a').addClass('on')
+				
+				
+				sect5Ani()
+				//$('#sect5 img').addClass('on')
+			}
+			
+			
+		})
+	
+
+
+
 	
 	});

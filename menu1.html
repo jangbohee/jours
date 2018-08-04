@@ -8,8 +8,10 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 	<link rel="stylesheet" href="css/swiper.css">
 	<link rel="stylesheet" href="style.css">
-	<script src="js/swiper.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/jquery.mousewheel.js"></script>
+	<script src="js/swiper.js"></script>
+	
 	<script src="js/menu.js"></script>
 	<script src="custom.js"></script>
 	
@@ -19,15 +21,17 @@
 	<style>.fifa{width: 100%;}
 	body{font-family: 'Nanum Square';
 		font-weight:bold}
+		a{display: block; text-decoration: none; color:#6f0707;}
+.footer a:hover{color:#ff2626;text-decoration: none;}
 	</style>
 	
 </head>
 <body>
-	<div id="header"></div>
+	<div class="section" id="header"></div>
 	
 	
 	<div class="contentup">
-		<div id="sec1">
+		<div class="section" id="sec1">
 			 <!-- Swiper -->
 <div class="swiper-container">
     <div class="swiper-wrapper">
@@ -67,65 +71,82 @@
   </div>
   <!--swiper-->
 		</div>
-		<div id="sec2">
+		<div class="section" id="sec2">
 			<!-- ani1 -->
 			<div class="ani rbg blue">
-				
+
+				<img src="img/menu_menu_coffee.png" alt="">
 				<p>향긋한 밀크티와</br>
 					깊은 맛의 에스프레소가 어우러진 </p>
 				<h2>아이스 카페</br>밀크티</h2>
 				
+
 			</div>
 			<div class="ani lbg white">
-
+				<img src="img/menu_menu_tea.png" alt="">
 				<p>새콤달콤 히비스커스티에</br>
 					유자차와 생딸기가 어우러진  </p>
 				<h2>스트로베리</br>
 					히비스커스티</h2>
+				
 			</div>
 		</div>
-		<div id="sec3">
+		<div class="section" id="sec3">
 			<!--ani1-->
 			<div class="ani rbg white">
+				<img src="img/menu_menu_aid.png" alt="">
 				<p>청포도와 미초를 넣어</br>
 					입안가득씹히는 생생한  </p>
 				<h2>청포도</br>미초에이드</h2>
+				
 			</div>
 			<div class="ani lbg blue" >
+				<img src="img/menu_menu_bingsu.png" alt="">
 				<p>달콤한 망고얼음과 패션후르츠,</br>
 					새콤달콤한 망고가 어우려진  </p>
 				<h2>패션 푸르츠</br>망고빙수</h2>
+				
 			</div>
 		</div>
-		<div id="sec4">
+		<div class="section" id="sec4">
 			<!--ani1-->
 			<div class="ani rbg blue">
+				<img src="img/menu_menu_bread.png" alt="">
 				<p>오후 시간 든든한 간식!</br>
 					손으로 뜯어먹거나 슬라이스하여</br>
 					여럿이 나눠먹기 좋은 </p>
 				<h2>이탈리안</br>피자브레드</h2>
+				
 			</div>
 			<div class="ani lbg white">
+				<img src="img/menu_menu_sand.png" alt="">
 				<p>언양식 불고기와 무피클이 어우러져</br>
 					든든하게 즐기는 3단 샌드위치 </p>
 				<h2>속이 든든</br>불고기샌드위치</h2>
+				
 			</div>
 		</div>
-		<div id="sec5">
+		<div class="section" id="sec5">
 			<!--ani1-->
 			<div class="ani rbg white">
+				<img src="img/menu_menu_salad.png" alt="">
 				<p>새콤달콤 블루베리와</br>
 					신선하고 달콤한 딸기가 가득,</p>
 				<h2>베리베리 빙수</h2>
+				
 			</div>
 			<div class="ani lbg blue">
+				<img src="img/menu_menu_cake.png" alt="">
 				<p>새콤달콤 히비스커스티에 
 					유자차와 생딸기가 어우러진</p>
 				<h2>스트로베리</br> 
 					히비스커스티</h2>
+				
 			</div>
 		</div>
-		<div id="sec6">
+		<div class="section" id="sec6">
+
+			<h5>이 달의 추천 메뉴</h5>
 			<!--slidermenu-->
 			<div class="banner-container">
 	<div class="banner-wrap">
@@ -168,47 +189,93 @@
 		</div>
 		
 <div class="contentdown">
-		<div id="sec8">
+		<div class="section" id="sec8">
+
+			<div class="snstop"><img src="img/menu_sns_text.png" alt=""></div>
 			<!--snspage(autoslide)-->
-			<div class="swiper-container swiper3">
-			<div class="swiper-wrapper">
-			 
-			 
-			 <div class="swiper-slide"><a href="#" class="ffloat1"><img src="img/menu_sns01.jpg" alt="" class="fimg"></a> 
-			  </div>
-				
-			  <div class="swiper-slide"><a href="#" class="ffloat1"><img src="img/menu_sns02.jpg" alt="" class="fimg"></a> 
-			  </div>
-			 
-			  <div class="swiper-slide"> <a href="#" class="ffloat1"><img src="img/menu_sns03.jpg" alt="" ></a> 
-			  </div>
-			 
-			   <div class="swiper-slide"> <a href="#" class="ffloat1"><img src="img/menu_sns02.jpg" alt="" class="fimg"> </a> 
-			  </div>
-			  
-			  <div class="swiper-slide"><a href="#" class="ffloat1"> <img src="img/menu_sns03.jpg" alt="" class="fimg"></a>  
-			  </div>
-			  
-			  
-			   <div class="swiper-slide"><a href="#" class="ffloat1"><img src="img/menu_sns01.jpg" alt="" class="fimg"></a> 
-			  </div>
-			  
-			
-			  
-			</div><!--swiper-wrapper-->
-			
-			
-			<div class="swiper-pagination"></div>
-			<!-- Add Arrows -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-		  </div><!--swiper-container swiper3-->
+			<div class="slider_container">
+					<div class="slider_wrap">
+					
+						<div class="slider">
+							<img src="img/menu_sns01.jpg" alt="">
+						</div>
+						<div class="slider">
+							<img src="img/menu_sns02.jpg" alt="">
+						</div>
+						<<div class="slider">
+							<img src="img/menu_sns03.jpg" alt="">
+						</div>
+						<div class="slider">
+							<img src="img/menu_sns04.jpg" alt="">
+						</div>
+						<div class="slider">
+							<img src="img/menu_sns05.jpg" alt="">
+						</div>
+						<div class="slider">
+							<img src="img/menu_sns06.jpg" alt="">
+						</div>
+						<div class="slider">
+							<img src="img/menu_sns07.jpg" alt="">
+						</div>
+						<div class="slider">
+							<img src="img/menu_sns01.jpg" alt="">
+						</div>
+						<div class="slider">
+							<img src="img/menu_sns02.jpg" alt="">
+						</div>
+						<div class="slider">
+							<img src="img/menu_sns03.jpg" alt="">
+						</div>
+						
+					</div>
+					<div class="prev"><img src=" img/menu_sns_arrowL.jpg" alt=""></div>
+					<div class="next"><img src=" img/menu_sns_arrowR.jpg" alt=""></div>
+				</div>	<!--swiper-container swiper3-->
 			
 			
 		</div>
 	</div>
-	<div class="footer"></div>
-	
+
+<div class="footerbg">
+	<div class="footer">
+		<div class="ftop">
+			<div class="ftl"></div>
+			<div class="ftr"></div>		
+		</div>
+		<ul class="fbot">
+			<li><a href="#">회사소개<span>·</span></a></li>
+			<li><a href="#">기사 채용안내<span>·</span></a></li>
+			<li><a href="#">이용약관<span>·</span></a></li>
+			<li><a href="#">창업안내<span>·</span></a></li>
+			<li><a href="#">개인정보처리방침<span>·</span></a></li>
+			<li><a href="#">이메일무단수집거부<span>·</span></a></li>
+			<li><a href="#">윤리신고센터<span>·</span></a></li>
+			<li><a href="#">법적고지<span>·</span></a></li>
+			<li><a href="#">사이트맵</a></li>
+		</ul>
+		
+		<form action="/action_page.php" >
+			<input type="text" name="" value="Family Site">
+		</form>
+		<ul class="level2">
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+
+		</ul>	
+		
+
+	</div>
+</div>	
 	
 	
 	
