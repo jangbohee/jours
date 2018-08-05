@@ -136,68 +136,61 @@
 		$(window).scroll(function(){
 		
 			var scrTop=$(window).scrollTop();
-			$('.section div').removeClass('on')//활성화 되어있는 모든 애니를 초기화시킨다(애니메이트하기위해)
+			$('.section img,.section p,.section h2').removeClass('on')//활성화 되어있는 모든 애니를 초기화시킨다(애니메이트하기위해)
 			if(scrTop>=posBox1 && scrTop<posBox2){
 			
-				$('.section >div').removeClass('on')
-				$('div.blue').eq(0).find('a').addClass('on')
 				
 				
 			}
 			
 			if(scrTop>=posBox2 && scrTop<posBox3){
 			
-			
-				$('ul.gnb li').find('a').removeClass('on')
-				$('ul.gnb li').eq(1).find('a').addClass('on')
+				$('#sec2 .text').addClass('on')
 				
-				$('#sect2 .process').addClass('on')
+				$('#sec2 .rbg img,#sec2 .lbg img').addClass('on'),200
 				
-				$('.sect2concept').addClass('on'),200
 				
-				$('.sect2conceptbg').addClass('on'),200
 				
 				
 			}
 			
 			if(scrTop>=posBox3 && scrTop<posBox4){
 			
-				$('ul.gnb li a').removeClass('on')
-				$('ul.gnb li').eq(2).find('a').addClass('on')
+				$('#sec3 .text').addClass('on')
 				
-		
-				
-				$('.sect3Text').addClass('on')
-				
-				sect3Ani()
-				
+				$('#sec3 .rbg img,#sec3 .lbg img').addClass('on'),200
+			
 			}
 			
+
 			if(scrTop>=posBox4 && scrTop<posBox5){
 			
-				$('ul.gnb li a').removeClass('on')
-				$('ul.gnb li').eq(3).find('a').addClass('on')
+				$('#sec4 .text').addClass('on')
 				
-				$('#sect4 img').addClass('on')
-				
-				$('.sect4Text').addClass('on')
+				$('#sec4 .rbg img,#sec4 .lbg img').addClass('on'),200
 			}
 			
-			if(scrTop>=posBox5 && scrTop<posBox6){
+
+			if(scrTop>=posBox5){
 			
-				$('ul.gnb li a').removeClass('on')
-				$('ul.gnb li').eq(4).find('a').addClass('on')
+				$('#sec5 .text').addClass('on')
 				
-				
-				sect5Ani()
-				//$('#sect5 img').addClass('on')
+				$('#sec5 .rbg img,#sec5 .lbg img').addClass('on'),200
+			
 			}
 			
 			
 		})
 	
-
-
-
+		
+		
+		$('.button').mouseenter(function(){
+		
+			$('.level2').addClass("on")
+		})
+		$('.button').mouseleave(function(){
+		
+			$('.level2').removeClass("on")
+		})
 	
 	});
