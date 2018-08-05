@@ -136,7 +136,7 @@
 		$(window).scroll(function(){
 		
 			var scrTop=$(window).scrollTop();
-			$('.section img,.section p,.section h2').removeClass('on')//활성화 되어있는 모든 애니를 초기화시킨다(애니메이트하기위해)
+			$('.section img,.section .text').removeClass('on')//활성화 되어있는 모든 애니를 초기화시킨다(애니메이트하기위해)
 			if(scrTop>=posBox1 && scrTop<posBox2){
 			
 				
