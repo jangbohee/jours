@@ -1,10 +1,11 @@
+html,body{height: 100%;}
 .wrap{width: 1200px;margin: auto;}
-
+section{height: 100%;width: 100%;padding-top:150px;position: relative;}
 .swiper-container {
       width: 100%;
       height: 100%;
     }
-    .swiper-slide {
+   .swiper-container1 .swiper-slide {
       text-align: center;
       font-size: 18px;
       background: #fff;
@@ -22,9 +23,10 @@
       -webkit-align-items: center;
       align-items: center;
    }
- .swiper-slide img{width: 100%;}
+   .swiper-container2 .swiper-wrapper{padding-top:  10px;width: 1200px;}
+   .swiper-container1 .swiper-slide img{width: 100%;}
 #header{position: fixed;left: 0;top: 0;z-index:999;width: 100%;}
-.banner{height: 630px;width: 100%;margin-top: 150px;}
+.banner{height: 630px;width: 100%;}
 .mini_banner{display:flex;color:#51400a}
 .mini_banner .box{width:250px;height: 194px;text-align:center;padding-top: 30px;cursor:pointer}
 .mini_banner .box:first-child{background:#b5ce97}
@@ -35,5 +37,16 @@
 .note ul{padding-top:20px}
 .note ul li{cursor:pointer;padding:5px 0;font-size:16px}
 
-.brand{width: 100%;height: 600px;background:url('../img/main_brandbg.JPG');margin-top: 100px;}
-.brand .text{height: 100%;width: 300px;background:rgba(0,0,0,0.5);}
+.brand{width: 100%;height: 600px;background:url('../img/main_brandbg.JPG');}
+.brand_wrap{height: 100%;}
+.brand .text{height: 100%;width: 300px;background:rgba(0,0,0,0.5);color:white;padding: 150px 20px;}
+.brand .text h1{font-size:40px;padding: 10px 0;}
+.brand .text p{font-size:16px;padding: 10px 0;}
+.brand .text button{border: 1px solid #fff;background:transparent;color:white;font-weight:bold;padding:10px 30px;margin: 10px 0;}
+.card{width: 100%;text-align:center}
+.card h1{padding: 10px 0;font-size: 30px;color:#51400a}
+.card_box{height: 150px;}
+
+.best{background: #f5f5f5;width: 100%;height: 100%;text-align:center}
+.best h2{padding:40px 0 0 0;color:#b5ce97;font-size:30px}
+.best h1{padding:0 0 40px 0;color:#51400a;font-size:35px}
