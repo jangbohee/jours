@@ -1,0 +1,176 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Touslesjours</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+	<style>
+		*{margin: auto;padding: 0;list-style:none;font-family: 'Nanum Square';}
+		.header ul li{cursor:pointer;color:#483730}
+		.wrap{width: 1200px;margin: auto;}
+		.header{width: 100%;height: 213px;background:url('img/main_headerbg.PNG');position: relative;z-index:999}
+		.logo{position:absolute;left: 50%;top: 45%;transform:translate(-50%,-50%);z-index:99}
+		.top{padding-top: 50px;display:flex;justify-content:space-between;align-items:center}
+		.sns{overflow: hidden;margin: 0;}
+		.sns li{float: left;padding-right:20px;font-size:25px;font-weight:bold}
+		.gnb{overflow: hidden;margin: 0;}
+		.gnb li{float: left;font-size:13px;padding-right:10px}
+
+		.line{position:absolute;width: 100%;height: 5px;background:#483730;top: 100px;}
+		.bottom{display:flex;justify-content:space-between;align-items:center}
+		.member{margin: 0;overflow: hidden;padding-top:30px}
+		.member li{float: left;font-size:15px;padding-right:20px;}
+		.nav{overflow: hidden;margin: 0;padding-top:30px;}
+		.nav li{float: left;position: relative;}
+		.nav li a{text-decoration:none;display: block;padding:0 20px;margin:0 10px;color:#483730;font-weight:bold;font-size:17px;}
+		.circle{width: 16px;height: 16px;background:url('img/nav_circle.PNG')center no-repeat;position:absolute;top:-21px;left:50%;transform:translateX(-50%);display: none;}
+		li:hover{text-decoration:underline}
+		.nav li:first-child .circle{display: block;}
+		.nav_box{position:absolute;border-bottom: 3px solid #483730;padding-bottom:20px;z-index:99;display: none;top: 150px;padding-top:60px}
+		.menu{width: 100%;background:white}
+		.menu table{width:1200px;margin: auto;text-align:left;}
+		.menu table th{font-size:18px;padding: 10px 0;width: 14.28%;}
+		.menu table td{padding: 5px 0;font-size:13px;width: 14.28%;}
+		.menu table a{color:#483730;text-decoration:none}
+		.menu table a:hover{font-weight:bold;text-decoration:underline}
+
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(function(){
+			$('.nav li').mouseenter(function(){
+				var idx=$(this).index()
+				$('.nav li').find('.circle').stop().fadeOut(400)
+				$(this).find('.circle').stop().fadeIn(400)
+				$('.nav_box').stop().slideUp()
+				$('.nav_box').eq(idx).stop().slideDown()
+			})
+			$('.nav_box').mouseleave(function(){
+				$('.nav_box').stop().slideUp()
+			})
+		})
+	</script>
+
+</head>
+<body>
+	<div class="header">
+		<h1 class="logo"><img src="img/main_logo.PNG" alt=""></h1>
+		<div class="line"></div>
+		<div class="wrap">
+			<div class="top">
+				<ul class="sns">
+					<li><i class="fa fa-facebook"></i></li>
+					<li><i class="fa fa-twitter"></i></li>
+					<li>B</li>
+					<li><i class="fa fa-instagram"></i></li>
+				</ul>
+				<ul class="gnb">
+					<li>창업문의</li>
+					<li>영양정보</li>
+					<li>고객센터</li>
+				</ul>
+			</div>
+			<div class="bottom">
+				<ul class="member">
+					<li>Login</li>
+					<li>Join</li>
+				</ul>
+				<ul class="nav">
+					<li><a href="#"><div class="circle"></div>MENU</a></li>
+					<li><a href="#"><div class="circle"></div>EVENT</a></li>
+					<li><a href="#"><div class="circle"></div>STORE</a></li>
+					<li><a href="#"><div class="circle"></div>BRAND</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<div class="menu nav_box">
+		<table>
+			<tr>
+				<th>빵</th>
+				<th>샌드위치</th>
+				<th>케이크</th>
+				<th>샐러드</th>
+				<th>음료</th>
+				<th>수프</th>
+				<th>기타</th>
+			</tr>
+			<tr>
+				<td><a href="#">전체</a></td>
+				<td><a href="#">전체</a></td>
+				<td><a href="#">전체</a></td>
+				<td><a href="#">전체</a></td>
+				<td><a href="#">전체</a></td>
+				<td><a href="#">전체</a></td>
+				<td><a href="#">전체</a></td>
+			</tr>
+			<tr>
+				<td><a href="#">간식용빵</a></td>
+				<td><a href="#">샌드위치</a></td>
+				<td><a href="#">생크림케이크</a></td>
+				<td><a href="#">샐러드</a></td>
+				<td><a href="#">커피</a></td>
+				<td><a href="#">수프</a></td>
+				<td><a href="#">전통선물류</a></td>
+			</tr>
+			<tr>
+				<td><a href="#">식빵,식사용빵</a></td>
+				<td><a href="#"></a></td>
+				<td><a href="#">무스케이크</a></td>
+				<td><a href="#"></a></td>
+				<td><a href="#">스무디</a></td>
+				<td><a href="#"></a></td>
+				<td><a href="#">쿠키류</a></td>
+			</tr>
+			<tr>
+				<td><a href="#">식빵,식사용빵</a></td>
+				<td><a href="#"></a></td>
+				<td><a href="#">무스케이크</a></td>
+				<td><a href="#"></a></td>
+				<td><a href="#">스무디</a></td>
+				<td><a href="#"></a></td>
+				<td><a href="#">쿠키류</a></td>
+			</tr>
+			<tr>
+				<td><a href="#">도넛</a></td>
+				<td><a href="#"></a></td>
+				<td><a href="#">스페셜케이크</a></td>
+				<td><a href="#"></a></td>
+				<td><a href="#">빙수</a></td>
+				<td><a href="#"></a></td>
+				<td><a href="#">잼/스프레드</a></td>
+			</tr>
+			<tr>
+				<td><a href="#">파이,패스트리</a></td>
+				<td><a href="#"></a></td>
+				<td><a href="#">선물용케이크</a></td>
+				<td><a href="#"></a></td>
+				<td><a href="#">과일주스 & 에이드</a></td>
+				<td><a href="#"></a></td>
+				<td><a href="#">초콜릿/캔디</a></td>
+			</tr>
+			<tr>
+				<td><a href="#">유럽,건강빵</a></td>
+				<td><a href="#"></a></td>
+				<td><a href="#">간식용케이크</a></td>
+				<td><a href="#"></a></td>
+				<td><a href="#">티 & 라떼류</a></td>
+				<td><a href="#"></a></td>
+				<td><a href="#">아이스크림</a></td>
+			</tr>
+			<tr>
+				<td><a href="#">조리빵</a></td>
+				<td><a href="#"></a></td>
+				<td><a href="#">대형케이크</a></td>
+				<td><a href="#"></a></td>
+				<td><a href="#">완제음료</a></td>
+				<td><a href="#"></a></td>
+				<td><a href="#"></a></td>
+			</tr>
+		</table>
+	</div><!-- Menu 호버시 -->
+	
+</body>
+</html>
