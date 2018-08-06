@@ -1,0 +1,5 @@
+.main {position: relative;}
+.main img {
+          position: absolute;
+          top: 456px;
+          }
