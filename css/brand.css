@@ -1,0 +1,14 @@
+.main {
+position: relative;
+}
+.main img {
+            position:absolute;
+            }
+.main h1 img{
+            top: 248px;
+            left: 342px;    
+            }
+.main h2 img {
+                top: 390px;
+                left: 418px;
+                }                        
