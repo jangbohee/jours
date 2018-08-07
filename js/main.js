@@ -3,6 +3,7 @@ $(function(){
 	$('.drink').show()
 	$("#header").load("nav.html");
 	$("#footer").load("footer.html");
+	$(".ajax").colorbox();
 		var swiper1 = new Swiper('.swiper-container1', {
 		 loop: true,
 		 autoplay: {

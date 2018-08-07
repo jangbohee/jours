@@ -1,5 +1,4 @@
 html,body{height: 100%;}
-.link{margin-top: -20px}
 .wrap{width: 1200px;margin: auto;}
 section{height: 100%;width: 100%;padding-top:150px;position: relative;}
 .swiper-container {
@@ -33,7 +32,7 @@ section{height: 100%;width: 100%;padding-top:150px;position: relative;}
 .mini_banner .box{width:250px;height: 194px;text-align:center;padding-top: 30px;cursor:pointer}
 .mini_banner .link:first-child .box{background:#b5ce97}
 .mini_banner .link:nth-child(2) .box{background:#a9c7d8}
-.note{flex-grow:1;height: 194px;padding: 20px 0px 20px 50px;margin-top:-20px}
+.note{flex-grow:1;height: 194px;padding: 20px 0px 20px 50px;}
 .note .title{display:flex;align-items:center;justify-content:space-between}
 .note .title p{cursor:pointer;font-size:17px}
 .note ul{padding-top:20px}
