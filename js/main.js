@@ -1,5 +1,8 @@
 $(function(){
-	$("#header").load("https://jangbohee.github.io/jours/nav.html");
+	$('.menu_tap').hide()
+	$('.drink').show()
+	$("#header").load("nav.html");
+	$("#footer").load("footer.html");
 		var swiper1 = new Swiper('.swiper-container1', {
 		 loop: true,
 		 autoplay: {
@@ -38,5 +41,8 @@ $(function(){
 	$('.best_nav li').click(function(){
 		$('.best_nav li').removeClass('on')
 		$(this).addClass('on')
+		var idx=$(this).index()
+		$('.menu_tap').hide()
+		$('.menu_tap').eq(idx).show()
 	})
 })
