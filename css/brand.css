@@ -13,30 +13,93 @@ position: absolute;
             }
 .main h1 img{
             top: 248px;
-            left: 342px;    
+            left: 322px;    
             }
 .main h2 img {
                 top: 390px;
-                left: 418px;
+                left: 398px;
                 }       
 .main h3 img {
                 top: 55px;
-                right: 148px; 
+                right: 128px; 
                 }
 .main h4 img {
                 top: 536px;
-                left: 342px;
+                left: 322px;
                 }
 .main-2 {
         position:relative;
+        height: 540px;
         }
 .main-2 p img{
             position:absolute;
             }
 .main-2 p:nth-child(1) img{
-                            left: 498px;
+                            left: 478px;
                             }
 .main-2 p:nth-child(2) img{
                             top: 75px;
-                            left: 342px;
-                            }                 
+                            left: 322px;
+                            }
+.main-2 p:nth-child(3) img{
+                           right: 10px;
+                           top: 75px;
+                            }
+
+.main-3 ul {
+                position: relative;
+                }              
+.main-3 ul li img {
+                        position:absolute;
+                        }
+.main-3 ul li:nth-child(1) img {
+                                left:844px;
+                                }
+.main-3 ul li:nth-child(2) img{
+                                top: 96px;
+                                left: 560px;
+                                }
+.main-3 ul li:nth-child(3) img{
+                                top: 117px;
+                                left: 322px;
+                                } 
+.main-3 ul li:nth-child(4) img{
+                                top: 175px;
+                                left: 560px;
+                                }
+.main-3 ul li:nth-child(5) img{
+                                top: 220px;
+                                left: 563px;
+                                }
+.main-3 ul li:nth-child(6) img{
+                                top: 360px;
+                                right: 798px;
+                                }
+.main-3 ul li:nth-child(7) img{
+                                top: 347px;
+                                right: 573px;
+                                }
+.main-3 ul li:nth-child(8) img{
+                                right: 602px;
+                                top: 478px;
+                                }
+.main-3 ul li:nth-child(9) img{
+                                top: 305px;
+                                right: 182px;
+                                }  
+.main-3 ul li:nth-child(10) img{
+                                left: 322px;
+                                top: 780px;
+                                }
+.main-3 ul li:nth-child(11) img{
+                                top: 796px;
+                                left: 630px;
+                                }
+.main-3 ul li:nth-child(12) img{
+                                top: 830px;
+                                left: 846px;
+                                }
+.main-3 ul li:nth-child(13) img{
+                                top: 964px;
+                                left: 642px;
+                                }                                                                                                           
