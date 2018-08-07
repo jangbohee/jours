@@ -1,6 +1,13 @@
+body{
+    background:#fff8e6;
+    }
 .main {
-position: relative;
-}
+        position: relative;
+        height: 878px;
+        }
+.main h1 {
+position: absolute;
+}        
 .main img {
             position:absolute;
             }
@@ -11,4 +18,25 @@ position: relative;
 .main h2 img {
                 top: 390px;
                 left: 418px;
-                }                        
+                }       
+.main h3 img {
+                top: 55px;
+                right: 148px; 
+                }
+.main h4 img {
+                top: 536px;
+                left: 342px;
+                }
+.main-2 {
+        position:relative;
+        }
+.main-2 p img{
+            position:absolute;
+            }
+.main-2 p:nth-child(1) img{
+                            left: 498px;
+                            }
+.main-2 p:nth-child(2) img{
+                            top: 75px;
+                            left: 342px;
+                            }                 
