@@ -6,6 +6,8 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
 	<style>
+		a{color:#483730}
+		.sns a,.gnb a{text-decoration:none}
 		*{margin: auto;padding: 0;list-style:none;font-family: 'Nanum Square';}
 		.header ul li{cursor:pointer;color:#483730}
 		.wrap{width: 1200px;margin: auto;}
@@ -27,13 +29,13 @@
 		.circle{width: 16px;height: 16px;background:url('img/nav_circle.PNG')center no-repeat;position:absolute;top:-21px;left:50%;transform:translateX(-50%);display: none;}
 		li:hover{text-decoration:underline}
 		.nav li:first-child .circle{display: block;}
-		.nav_box{position:absolute;border-bottom: 3px solid #483730;padding-bottom:20px;z-index:99;display: none;top: 150px;padding-top:60px}
-		.menu{width: 100%;background:white}
+		.nav_box{position:absolute;border-bottom: 3px solid #483730;padding-bottom:20px;z-index:99;display: none;top: 150px;padding-top:60px;width: 100%;background:white}
 		.menu table{width:1200px;margin: auto;text-align:left;}
 		.menu table th{font-size:18px;padding: 10px 0;width: 14.28%;}
 		.menu table td{padding: 5px 0;font-size:13px;width: 14.28%;}
 		.menu table a{color:#483730;text-decoration:none}
 		.menu table a:hover{font-weight:bold;text-decoration:underline}
+		.event table{padding: 20px 0 10px 0;}
 
 	</style>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -60,15 +62,15 @@
 		<div class="wrap">
 			<div class="top">
 				<ul class="sns">
-					<li><i class="fa fa-facebook"></i></li>
-					<li><i class="fa fa-twitter"></i></li>
-					<li>B</li>
-					<li><i class="fa fa-instagram"></i></li>
+					<li><a href="https://www.facebook.com/TOUSlesJOURS"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="https://twitter.com/cjtlj"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="https://breadschool.blog.me/">B</a></li>
+					<li><a href="https://www.instagram.com/touslesjours_kr/"><i class="fa fa-instagram"></i></a></li>
 				</ul>
 				<ul class="gnb">
-					<li>창업문의</li>
-					<li>영양정보</li>
-					<li>고객센터</li>
+					<li><a href="https://www.tlj.co.kr:7008/franchise/index.asp">창업문의</a></li>
+					<li><a href="#">영양정보</a></li>
+					<li><a href="https://www.tlj.co.kr:7008/center/main.asp">고객센터</a></li>
 				</ul>
 			</div>
 			<div class="bottom">
@@ -78,8 +80,8 @@
 				</ul>
 				<ul class="nav">
 					<li><a href="#"><div class="circle"></div>MENU</a></li>
-					<li><a href="#"><div class="circle"></div>EVENT</a></li>
-					<li><a href="#"><div class="circle"></div>STORE</a></li>
+					<li><a href="event_index.html"><div class="circle"></div>EVENT</a></li>
+					<li><a href="store.html"><div class="circle"></div>STORE</a></li>
 					<li><a href="#"><div class="circle"></div>BRAND</a></li>
 				</ul>
 			</div>
@@ -171,6 +173,7 @@
 			</tr>
 		</table>
 	</div><!-- Menu 호버시 -->
+	
 	
 </body>
 </html>
