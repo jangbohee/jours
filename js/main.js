@@ -1,5 +1,9 @@
 $(function(){
-	$("#header").load("https://jangbohee.github.io/jours/nav.html");
+	$('.menu_tap').hide()
+	$('.drink').show()
+	$("#header").load("nav.html");
+	$("#footer").load("footer.html");
+	$(".ajax").colorbox();
 		var swiper1 = new Swiper('.swiper-container1', {
 		 loop: true,
 		 autoplay: {
@@ -8,7 +12,7 @@ $(function(){
 		 },
 		 effect: 'fade',
 		 pagination: {
-			el: '.swiper-pagination',
+			el: '.swiper-pagination1',
 		  },
 	});
 	var swiper2 = new Swiper('.swiper-container2', {
@@ -19,9 +23,27 @@ $(function(){
 		   delay: 800,
 		   disableOnInteraction: false,
 		},
-		pagination: {
-		  el: '.swiper-pagination',
-		  clickable: true,
-		},
-	  });
+ });
+	  $('section').mousewheel(function(event,delta){
+		if(delta>0){
+			var prev=$(this).prev().offset().top
+			$('html,body').stop().animate({scrollTop:prev},500)
+		}
+		else if(delta<0){
+			var idx=$(this).index()
+			if(idx<=2){
+				var next=$(this).next().offset().top
+				$('html,body').stop().animate({scrollTop:next},500)
+			}
+		}
+		
+	})
+	
+	$('.best_nav li').click(function(){
+		$('.best_nav li').removeClass('on')
+		$(this).addClass('on')
+		var idx=$(this).index()
+		$('.menu_tap').hide()
+		$('.menu_tap').eq(idx).show()
+	})
 })
