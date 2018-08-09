@@ -1,0 +1,11 @@
+.main .up{
+            border: 1px solid #000;
+            width: 294px;
+            height: 137px;
+            }
+.main .top li img {
+                    display: block;
+                    }
+.main .top li {
+padding-bottom:22px;
+}
