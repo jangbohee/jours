@@ -1,7 +1,8 @@
 $(function(){
 	// 보희씨가 만든 인크루트 파일
 	$("#header").load("https://jangbohee.github.io/jours/nav.html");
-
+	$(".group1").colorbox({rel:'group1'});
+	
 		$('.nav1 li').click(function(){
 			var idx=$(this).index()
 			// var href=$(this).find('a').attr('href')
