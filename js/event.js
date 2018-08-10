@@ -2,7 +2,6 @@ $(function(){
 	// 보희씨가 만든 인크루트 파일
 	$("#header").load("nav.html");
 	$("#footer").load("footer.html");
-	$("#footer").load("footer.html");
 	
 	$(".group1").colorbox({rel:'group1'});
 	
