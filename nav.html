@@ -30,12 +30,15 @@
 		li:hover{text-decoration:underline}
 		.nav li:first-child .circle{display: block;}
 		.nav_box{position:absolute;border-bottom: 3px solid #483730;padding-bottom:20px;z-index:99;display: none;top: 150px;padding-top:60px;width: 100%;background:white}
-		.menu table{width:1200px;margin: auto;text-align:left;}
-		.menu table th{font-size:18px;padding: 10px 0;width: 14.28%;}
-		.menu table td{padding: 5px 0;font-size:13px;width: 14.28%;}
-		.menu table a{color:#483730;text-decoration:none}
-		.menu table a:hover{font-weight:bold;text-decoration:underline}
-		.event table{padding: 20px 0 10px 0;}
+		.nav_menu table{width:1200px;margin: auto;text-align:left;}
+		.nav_menu table th{font-size:18px;padding: 10px 0;width: 14.28%;}
+		.nav_menu table td{padding: 5px 0;font-size:13px;width: 14.28%;}
+		.nav_menu table a{color:#483730;text-decoration:none}
+		.nav_menu table a:hover{font-weight:bold;text-decoration:underline}
+		.nav_event,.nav_store{opacity: 0;}
+		.nav_brand{width: 100%;height: 190px ;padding-bottom:30px}
+		.nav_brand table{width: 1200px;margin: auto;height:100%;text-align:center;display: flex;justify-content:flex-end;}
+		.nav_brand table th{font-size:18px;padding: 50px 20px;}
 
 	</style>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -88,7 +91,7 @@
 		</div>
 	</div>
 	
-	<div class="menu nav_box">
+	<div class="nav_menu nav_box">
 		<table>
 			<tr>
 				<th>빵</th>
@@ -173,7 +176,14 @@
 			</tr>
 		</table>
 	</div><!-- Menu 호버시 -->
-	
+	<div class="nav_event nav_box"></div>
+	<div class="nav_store nav_box"></div>
+	<div class="nav_brand nav_box">
+			<table>
+				<th><a href="brand.html">뚜레쥬르 소개</a></th>
+				<th><a href="brand-cf.html">뚜레쥬르 CF</a></th>
+			</table>
+	</div>
 	
 </body>
 </html>
