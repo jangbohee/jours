@@ -25,10 +25,21 @@
             height: 305px;
             }
 .contents-main {
-                position: absolute;
+                position: relative;
                 width: 1200px;
                 height: 100%;
                 border:1px solid #000;
                 left: 50%;
-                transform:translateX(-50%)
+                transform:translateX(-50%);
+                overflow: hidden;
                 }
+.contents-main img {
+                    float:left;
+                    }
+.contents-main li:nth-child(2),
+.contents-main li:nth-child(3),
+.contents-main li:nth-child(4),
+.contents-main li:nth-child(5){
+                                float:right;
+                                padding: 10px;
+                                }
