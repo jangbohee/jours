@@ -55,16 +55,26 @@
         left: 50%;
         transform:translateX(-50%)
         }
+.cf {
+    width: 100%;
+    height: 100%;
+    }
 .cf h1 img {
             position:relative;
             left: 50%;
             margin-top:99px;
             transform:translateX(-50%)
             }
-.cf p {
-       position: absolute;
-      }
 .cf-img {
         overflow: hidden;
+        position: relative;
+        left: 50%;
+        transform:translateX(-50%);
+        width: 1400px;
         }
-.cf-img li{float:left}
+.cf-img li{
+            float:left;
+            width: 25%;
+            padding: 30px;
+            cursor:pointer;
+        }
